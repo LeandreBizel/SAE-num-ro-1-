@@ -6,8 +6,8 @@
 
 ## Membres du groupe :
 
-Etudiant 1 (référent du groupe) :  [Nom du référent du groupe](mailto:login@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
-Etudiant 2 : [Nom](mailto:login@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
+Etudiant 1 (référent du groupe) :  [Nom du référent du groupe](mailto:lbizelbi@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
+Etudiant 2 : [Nom](mailto:mbonvall@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
 Etudiant 3 : [Decailloz Valentin](mailto:vdecaill@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 Etudiant 4  : [Charton-Cautenet Mael](mailto:mchart10@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 
