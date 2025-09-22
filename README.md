@@ -8,7 +8,7 @@
 
 Etudiant 1 (référent du groupe) :  [Bizel-Bizellot Léandre](mailto:lbizelbi@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 Etudiant 2 : [Bonvallot Mathis](mailto:mbonvall@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
-Etudiant 3 : [Decailloz Valentin](mailto:vdecaill@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
+Etudiant 3 : [Decailloz Valentin](mailto:valentin.decailloz@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 Etudiant 4  : [Charton-Cautenet Mael](mailto:mael.charton--cautenet@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 
 # Présentation du projet
