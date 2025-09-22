@@ -12,5 +12,4 @@ Etudiant 3 : [Decailloz Valentin](valentin.decailloz@edu.univ-fcomte.fr?subject=
 Etudiant 4  : [Charton-Cautenet Mael](mael.charton--cautenet@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 
 # Présentation du projet
-
-# on créé un site pour devoteam pour présenter l'entreprise, ses différents secteurs d'activités ...
+on créé un site pour devoteam pour présenter l'entreprise, ses différents secteurs d'activités ...
