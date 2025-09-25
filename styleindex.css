@@ -26,8 +26,6 @@ body {
   letter-spacing: 1px;
 }
 
-
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -86,3 +84,17 @@ body {
   }
 }
 
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
