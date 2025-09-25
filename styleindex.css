@@ -29,6 +29,7 @@ body {
   overflow: hidden;           /* cache ce qui dépasse */
   display: flex;
   align-items: center;
+}
 
 .logo img {
   height: auto;
