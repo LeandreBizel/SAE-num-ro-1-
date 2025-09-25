@@ -24,19 +24,8 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 1px;
-  height: 40px;               /* même hauteur que la navbar */
-  width: 200px;               /* largeur volontairement agrandie */
-  overflow: hidden;           /* cache ce qui dépasse */
-  display: flex;
-  align-items: center;
 }
 
-.logo img {
-  height: auto;
-  width: 100%;                /* étire l’image horizontalement */
-  object-fit: contain;        /* garde les proportions */
-  display: block;
-}
 
 
 .nav-links {
