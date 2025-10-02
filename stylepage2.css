@@ -1,4 +1,7 @@
-* {
+/* */
+/* page ///////////////////////////////////////////////////////////////////////////////*/
+/* */
+html *, body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +11,9 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
 }
+
+
+/* bar_nav ////////////////////////////////////////////////////////////////////////////*/
 
 
 .navbar {
@@ -72,6 +78,61 @@ body {
 .nav-links li a:hover::after {
   width: 100%;
 }
+/* ContainerServices /////////////////////////////////////////////////////////////////////////*/
+
+.ContainerServices {
+  display: block;
+  justify-content: left;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.Service_IA, .Service_Now, .Service_Cloud, .Service_Cyber, .Service_Data{
+  display: flex;
+  margin-top: 5%;
+  margin-left: 3%;
+  display: block;
+  width: calc(100vw - 6%);
+  height: 300px;
+}
+.sous-titre{
+  float: inline-start;
+  background-color: #1e1e2f;
+  color: white;
+  border-radius: 10px;
+  margin-left: 3%;
+  margin-top: 1%;
+  width: 20%;
+  height: 50px;
+}
+.text{
+  float: right;
+  background-color: #1e1e2f;
+  color: white;
+  margin-right: 10%;
+  margin-top: 10px;
+  width: 50%;
+  height: 220px;
+}
+.img{
+  float: left;
+  border-radius: 20px;
+  background-color: #1e1e2f;
+  color: white;
+  margin-left: 3%;
+  margin-top: 0;
+  width: 30%;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+/* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 768px) {
   .navbar {
