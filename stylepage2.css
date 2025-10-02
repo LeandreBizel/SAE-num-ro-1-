@@ -100,29 +100,39 @@ body {
   background-color: #1e1e2f;
   color: white;
   border-radius: 10px;
-  margin-left: 3%;
   margin-top: 1%;
   width: 20%;
   height: 50px;
 }
 .text{
   float: right;
+  border-radius: 20px;
   background-color: #1e1e2f;
   color: white;
-  margin-right: 10%;
+  margin-right: 170px;
   margin-top: 10px;
   width: 50%;
   height: 220px;
 }
 .img{
   float: left;
-  border-radius: 20px;
-  background-color: #1e1e2f;
   color: white;
   margin-left: 3%;
   margin-top: 0;
   width: 30%;
   height: 300px;
+}
+.img img{
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+}
+.text p {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.sous-titre h1 {
+  margin-left: 10px;
 }
 
 
