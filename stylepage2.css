@@ -9,7 +9,7 @@ html *, body * {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+  background-color: white;
 }
 
 
@@ -120,38 +120,142 @@ footer{
 
 /* titre et solution ///////////////////////////////////////////////////////////////////////////////////////////*/
 
-.titre_solu{
-  background-color: blue;
+.titre_cont{
+  background-color: #ECF3F4;
   width: 100%;
-  height: 450px;
+  height: 200px;
 }
 .titre{
   width: 100%;
   font-size: xx-large;
   text-align: center;
 }
+.solution_cont{
+  display: flex;
+  background-color: #ECF3F4;
+  width: 100%;
+  height: 330px;
+}
 .solutions{
-  background-color: red;
   float: left;
-  margin-top: 50px;
-  margin-left: 50px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 15%;
   width: 30%;
   height: 220px;
 }
-.titre_solu img{
-  display: flex;
+.solutions h1{
+  font-size: 5ch;
+}
+.solutions p{
+  margin-top: 10px;
+}
+.solutions button {
+  cursor: pointer;
+  background-color: #EF223D;
+  margin-top: 25px;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #ECF3F4;
+}
+.solutions button:hover {
+  border: 2px solid;
+  transition: all 1s ease-out;
+  border-color: #2B2C43;
+}
+
+.solution_cont img{ 
+  border-radius: 10px;
   float: right;
+  margin-left: 30px;
+  margin-top: 5px;
+  width: calc(300px * 125%);
+  height: 300px;
 }
 
 /* pourquoi nous choisir /////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .pr_choisir{
-  background-color: red;
+  display: flex;
+  margin-top: 50px;
+  background-color: white;
+  flex-direction: wrap;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
-.pr_choisir h3, p{
-  display: none;
+
+.choix-anim{
+  background-color: #ECF3F4;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  transition: height 1s ease;
+}
+.choix-anim:hover{
+  background-color: #ECF3F4;
+  height: 500px;
+}
+.choix-anim:hover .pr_choisir1,.pr_choisir2,.pr_choisir3 h3{
+  visibility: visible;
+}
+
+.img1_pr_choisir{
+  width: 300px;
+  height: calc(300px * 125%);
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: #ECF3F4;
+}
+.img2_pr_choisir{
+  width: 300px;
+  height: calc(300px * 125%);
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: #ECF3F4;
+}
+.img3_pr_choisir{
+  width: 300px;
+  height: calc(300px * 125%);
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: #ECF3F4;
+}
+
+.pr_choisir1 h3 {
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
+}
+.pr_choisir1 p {
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
+}
+
+.pr_choisir2 h3 {
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
+}
+.pr_choisir2 p {
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
+}
+
+.pr_choisir3 h3 {
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
+}
+.pr_choisir3 p {
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
 }
 
 /* containerServices ///////////////////////////////////////////////////////////////////////////////////////////////////////*/

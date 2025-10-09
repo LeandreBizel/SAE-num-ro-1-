@@ -26,40 +26,53 @@
 </header>
 <body>
     
- <section class="titre_solu">
+ <section class="titre_cont">
     <div class="titre">
         <h1>Services</h1>
         <p>Devoteam accompagne les entreprises dans leur transformation digitale à travers des solutions innovantes en cloud, data, IA et cybersécurité.</p>
     </div>
-
-    <div class="solutions">
-
+ </section>
+<section class="solution_cont">
+     <div class="solutions">
         <h1>Nos solutions</h1>
         <p>Découvrez comment Devoteam transforme vos ambitions en réalité grâce à un écosystème complet de solutions digitales. De la stratégie à la mise en œuvre, nos experts vous accompagnent dans le cloud, la data, l’intelligence artificielle et la cybersécurité pour accélérer l’innovation, renforcer la performance et construire un avenir durable.</p>
         
-        <button id="scrollBtn">En savoir plus sur nos services</button>
+        <button id="scroll">En savoir plus sur nos services</button>
             <script>
+                 
+        const scrollButton = document.getElementById('scroll');
 
+        
+        scrollButton.addEventListener('click', () => {
+            
+            window.scroll({
+                top: document.body.scrollHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
             </script>
-    </div>
-    <img class="img_1" src="#">
+    
+</div>
+    <div  class="img_1"><img src="/image_page2/img_sol.png"></div>
+    
 </section>
     
     
 <section class="pr_choisir">
 
     <div class="pr_choisir1">
-        <img class="img1_pr_choisir" src="#">
+        <div class="choix-anim"> <img class="img1_pr_choisir" src="/image_page2/inDurable.png"></div>
         <h3>« Innovation durable & sécurisée »</h3>
         <p>Nous vous accompagnons dans une stratégie IT responsable : cybersécurité renforcée, cloud éco‑efficace et IA explicable pour un impact ESG positif.</p>
     </div>
     <div class="pr_choisir2">
-        <img class="img1_pr_choisir" src="#">
+        <div class="choix-anim"><img class="img2_pr_choisir" src="/image_page2/fast.webp"></div>
         <h3>« Résultats mesurables sans compromis »</h3>
         <p>Nos équipes certifiées livrent projets dans les temps et budgets, avec KPI clairs à suivre en temps réel.</p>
     </div>
     <div class="pr_choisir3">
-        <img class="img1_pr_choisir" src="#">
+        <div class="choix-anim"><img class="img3_pr_choisir" src="/image_page2/libre.jpg"></div>
         <h3>« Libérez votre potentiel numérique »</h3>
         <p>Devoteam transforme vos données en leviers de croissance : processus agiles, décisions éclairées et ROI visible dès le premier mois.</p>
     </div>
