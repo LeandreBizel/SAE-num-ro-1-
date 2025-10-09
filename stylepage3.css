@@ -97,3 +97,17 @@ body {
     padding: 10px 0;
   }
 }
+.case {
+  display: block;
+  justify-content: left;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+}
+.image{
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+
+}
+
