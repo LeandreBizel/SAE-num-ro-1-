@@ -84,70 +84,7 @@ body {
 }
 /* ContainerServices /////////////////////////////////////////////////////////////////////////*/
 
-.ContainerServices {
-  display: block;
-  justify-content: left;
-  overflow: hidden;
-  overflow-y: auto;
-}
-.headerx {
-  height: 50px;
-}
-.Service_IA, .Service_Now, .Service_Cloud, .Service_Cyber, .Service_Data{
-  display: flex;
-  margin-top: 5%;
-  margin-left: 3%;
-  display: block;
-  width: calc(100vw - 6%);
-  height: 300px;
-}
-.sous-titre{
-  background-color: #1e1e2f;
-  color: white;
-  border-radius: 10px;
-  margin-top: 1%;
-  width: auto;
-  display: inline-flex;
-  height: 70px;
-  margin: 0 1rem;
-    padding: .5rem 1rem; 
-}
-.text{
-  float: right;
-  border-radius: 20px;
-  background-color: #1e1e2f;
-  color: white;
-  margin-right: 170px;
-  margin-top: 10px;
-  width: 50%;
-  height: 220px;
-}
-.img{
-  float: left;
-  color: white;
-  margin-left: 3%;
-  margin-top: 0;
-  width: 30%;
-  height: 300px;
-}
-.img img{
-  border-radius: 20px;
-  width: 350px;
-  height: 300px;
-}
-.text p {
-  margin-top: 15px;
-  margin-left: 10px;
-}
-.sous-titre h1 {
-  margin-left: 0px;
-}
-body{
-  background-image: url("fond.png");
-}
-.Service_Data{
-  margin-bottom: 50px;
-}
+
 /* Footer ///////////////////////////////////////////////////////////////////////////////////*/
 
 footer{
