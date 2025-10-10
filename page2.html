@@ -51,26 +51,20 @@
     
 <section class="pr_choisir">
 
-    <div class="pr_choisir1">
         <button class="choix"> <img class="img1_pr_choisir" src="/image_page2/inDurable.png"></button>
         <div class="texte_choix">
         <h3>« Innovation durable & sécurisée »</h3>
         <p>Nous vous accompagnons dans une stratégie IT responsable : cybersécurité renforcée, cloud éco‑efficace et IA explicable pour un impact ESG positif.</p>
-        </div>
     </div>
-    <div class="pr_choisir2">
         <button class="choix"><img class="img2_pr_choisir" src="/image_page2/fast.webp"></button>
         <div class="texte_choix">
         <h3>« Résultats mesurables sans compromis »</h3>
         <p>Nos équipes certifiées livrent projets dans les temps et budgets, avec KPI clairs à suivre en temps réel.</p>
-        </div>
     </div>
-    <div class="pr_choisir3">
         <button class="choix"><img class="img3_pr_choisir" src="/image_page2/libre.jpg"></button>
         <div class="texte_choix">
         <h3>« Libérez votre potentiel numérique »</h3>
         <p>Devoteam transforme vos données en leviers de croissance : processus agiles, décisions éclairées et ROI visible dès le premier mois.</p>
-        </div>
     </div>
 
 </section>
@@ -193,44 +187,50 @@
 
 ///////////////////////////////////////////////////////////////////////
 
+const a = document.getElementsByClassName('choix');
 
-    var acc = document.getElementsByClassName("choix");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    
-    this.classList.toggle("active2");
-
-    
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+for (let i=0; i<a.length; i++){
+  a[i].addEventListener('click', function(){
+    const panel = this.nextElementSibling;
+    if(panel && panel.style.display === 'block'){
+       panel.style.display='none';
+       this.classList.remove('active');
+       return;
     }
+    for(let j=0;j<a.length;j++){
+        a[j].classList.remove('active');
+        const p = a[j].nextElementSibling;
+        if(p) p.style.display='none';
+    }
+    panel.style.display='block';
+    this.classList.add('active');
   });
 }
+
 
 ///////////////////////////////////////////////////////////////////////
 
-   var acc = document.getElementsByClassName("accordéon");
-var i;
+const b = document.getElementsByClassName('accordéon');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    
-    this.classList.toggle("active");
-
-    
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+for (let i=0; i<b.length; i++){
+  b[i].addEventListener('click', function(){
+    const panel = this.nextElementSibling;
+    if(panel && panel.style.display === 'block'){
+       panel.style.display='none';
+       this.classList.remove('active');
+       return;
     }
+    for(let j=0;j<b.length;j++){
+        b[j].classList.remove('active');
+        const p = b[j].nextElementSibling;
+        if(p) p.style.display='none';
+    }
+    panel.style.display='block';
+    this.classList.add('active');
   });
 }
+
+
 ///////////////////////////////////////////////////////////////////////
 </script>
 
