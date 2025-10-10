@@ -25,9 +25,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
+  background-color: #2B2C43;
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img{
+  transform: scale(0.5);
 }
 
 .logo {
@@ -68,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 0%;
   height: 2px;
-  background-color: #00adb5;
+  background-color: #EF223D;
   transition: width 0.3s;
   position: absolute;
   bottom: -5px;
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-links li a:hover {
-  color: #00adb5;
+  color: #EF223D;
 }
 
 .nav-links li a:hover::after {
@@ -125,12 +129,15 @@ footer{
 /* titre et solution ///////////////////////////////////////////////////////////////////////////////////////////*/
 
 .titre_cont{
-  margin-top: 0;
+  margin-top: 0 ;
+  padding: 15px;
   background-color: #ECF3F4;
   width: 100%;
-  height: 250px;
+  height: 200px;
 }
 .titre{
+  margin-top: 40px;
+  color: #2B2C43;
   width: 100%;
   font-size: xx-large;
   text-align: center;
@@ -139,9 +146,10 @@ footer{
   display: flex;
   background-color: #ECF3F4;
   width: 100%;
-  height: 330px;
+  height: 400px;
 }
 .solutions{
+  color: #2B2C43;
   float: left;
   float: left;
   margin-top: 20px;
