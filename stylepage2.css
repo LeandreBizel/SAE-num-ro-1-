@@ -11,7 +11,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: white;
 }
-
+p {
+  font-family: 'Bahnschrift', 'Arial', 'sans-serif';
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Franklin Ghotic Medium','Arial', 'sans-serif';
+}
 
 /* bar_nav ////////////////////////////////////////////////////////////////////////////*/
 
@@ -20,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
+  background-color: #222;
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -77,7 +82,6 @@ body {
 .nav-links li a:hover::after {
   width: 100%;
 }
-/* ContainerServices /////////////////////////////////////////////////////////////////////////*/
 
 
 /* Footer ///////////////////////////////////////////////////////////////////////////////////*/
@@ -184,91 +188,90 @@ footer{
   justify-content: center;
   gap: 10px;
   width: 100%;
-  height: 500px;
+  height: auto;
 }
 
-.choix-anim{
+.choix {
   background-color: #ECF3F4;
-  border-radius: 5px;
-  width: 100%;
-  height: 200px;
   cursor: pointer;
-  transition: height 1s ease;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
-.choix-anim:hover{
+
+
+.active2, .choix:hover {
   background-color: #ECF3F4;
-  height: 500px;
 }
-.choix-anim:hover .pr_choisir1,.pr_choisir2,.pr_choisir3 h3{
-  visibility: visible;
+
+
+.texte_choix {
+  padding: 0 18px;
+  background-color: #ECF3F4;
+  display: none;
+  overflow: hidden;
 }
 
 .img1_pr_choisir{
   width: 300px;
   height: calc(300px * 125%);
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #ECF3F4;
 }
 .img2_pr_choisir{
   width: 300px;
   height: calc(300px * 125%);
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #ECF3F4;
 }
 .img3_pr_choisir{
   width: 300px;
   height: calc(300px * 125%);
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #ECF3F4;
-}
-
-.pr_choisir1 h3 {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-.pr_choisir1 p {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-
-.pr_choisir2 h3 {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-.pr_choisir2 p {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-
-.pr_choisir3 h3 {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-.pr_choisir3 p {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
 }
 
 /* containerServices ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .ContainerServices{
-  background-color: green;
-  width: 100%;
-  height: 600px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  gap: 10px;
+  width: auto;
+  height: auto;
 }
+
+.accordéon {
+  background-color: #ECF3F4;
+  cursor: pointer;
+  padding: 18px;
+  width: 65%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordéon:hover {
+  background-color: #ECF3F4;
+}
+
+
+.texte_accordéon {
+  padding: 0 18px;
+  background-color: #ECF3F4;
+  width: 65%;
+  display: none;
+  overflow: hidden;
+}
+
+
+
 
 /* footer /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 footer {
+            margin-top: 50px;
             background-color: #222;
             color: #eee;
             text-align: center;
