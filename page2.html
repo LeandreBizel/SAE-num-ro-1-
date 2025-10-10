@@ -9,7 +9,7 @@
 </head>
     <header>
         <nav class="navbar">
-            <h1>Services</h1>
+            <img class="Logo-navbar" src="Logo-navbar-1.png">
 <ul class="nav-links">
 
         <li><a href="index.html">Accueil</a></li>
@@ -29,7 +29,7 @@
  <section class="titre_cont">
     <div class="titre">
         <h1>Services</h1>
-        <p>Devoteam accompagne les entreprises dans leur transformation digitale à travers des solutions innovantes en cloud, data, IA et cybersécurité.</p>
+        <p>Découvrez ici tous nos services</p>
     </div>
  </section>
 <section class="solution_cont">
@@ -38,10 +38,6 @@
         <p>Découvrez comment Devoteam transforme vos ambitions en réalité grâce à un écosystème complet de solutions digitales. De la stratégie à la mise en œuvre, nos experts vous accompagnent dans le cloud, la data, l’intelligence artificielle et la cybersécurité pour accélérer l’innovation, renforcer la performance et construire un avenir durable.</p>
         
         <button id="scroll">En savoir plus sur nos services</button>
-            <script>
-                 
-        
-            </script>
     
 </div>
     <div  class="img_1"><img src="/image_page2/img_sol.png"></div>
@@ -51,26 +47,20 @@
     
 <section class="pr_choisir">
 
-    <div class="pr_choisir1">
         <button class="choix"> <img class="img1_pr_choisir" src="/image_page2/inDurable.png"></button>
         <div class="texte_choix">
         <h3>« Innovation durable & sécurisée »</h3>
         <p>Nous vous accompagnons dans une stratégie IT responsable : cybersécurité renforcée, cloud éco‑efficace et IA explicable pour un impact ESG positif.</p>
-        </div>
     </div>
-    <div class="pr_choisir2">
-        <button class="choix"><img class="img2_pr_choisir" src="/image_page2/fast.webp"></button>
+        <button class="choix"><img class="img2_pr_choisir" src="/image_page2/fast.jpg"></button>
         <div class="texte_choix">
         <h3>« Résultats mesurables sans compromis »</h3>
         <p>Nos équipes certifiées livrent projets dans les temps et budgets, avec KPI clairs à suivre en temps réel.</p>
-        </div>
     </div>
-    <div class="pr_choisir3">
         <button class="choix"><img class="img3_pr_choisir" src="/image_page2/libre.jpg"></button>
         <div class="texte_choix">
         <h3>« Libérez votre potentiel numérique »</h3>
         <p>Devoteam transforme vos données en leviers de croissance : processus agiles, décisions éclairées et ROI visible dès le premier mois.</p>
-        </div>
     </div>
 
 </section>
@@ -78,7 +68,7 @@
 
 <section class="ContainerServices">
        
-        <div class="Service_IA">
+        <div class="services Service_IA">
 
             <button class="accordéon"><h1> IA </h1>Optimisez vos processus grâce à l’intelligence artificielle. DevoTeam vous accompagne dans la conception de solutions IA sur mesure pour améliorer la productivité, l’expérience client et la prise de décision. </button>
             <div class="texte_accordéon">
@@ -92,7 +82,7 @@
 
         </div>
         
-        <div class="Digital-Workplace_Modern-IT ">
+        <div class="services Digital-Workplace_Modern-IT ">
 
             <button class="accordéon"><h1>Digital Workplace & Modern IT </h1>Modernisez votre environnement de travail avec Devoteam. ET Offrez à vos équipes des outils collaboratifs performants et sécurisés pour favoriser la productivité, l’agilité et une expérience employé fluide au quotidien.</button>
             <div class="texte_accordéon">
@@ -106,7 +96,7 @@
 
         </div>
         
-        <div class="Service_Cloud">
+        <div class="services Service_Cloud">
 
             <button class="accordéon"><h1>Cloud</h1>Accélérez votre migration vers le cloud en toute sécurité. Nos experts vous conseillent et intègrent les meilleures solutions (AWS, Google Cloud, Azure) pour plus d’agilité et de performance.</button>
             <div class="texte_accordéon">
@@ -120,7 +110,7 @@
 
         </div>
 
-        <div class="Service_Cyber">
+        <div class="services Service_Cyber">
 
             <button class="accordéon"><h1>Cyber-securité</h1>Protégez vos données et vos infrastructures contre les menaces. DevoTeam propose des solutions avancées de cybersécurité adaptées aux enjeux actuels de conformité et de résilience.</button>
             <div class="texte_accordéon">
@@ -135,7 +125,7 @@
 
         </div>
         
-        <div class="Service_Data">
+        <div class="services Service_Data">
 
             <button class="accordéon"><h1>Gestion de Data</h1>Valorisez vos données pour générer de la valeur. DevoTeam met en place des plateformes data modernes, de l’ingestion au reporting, afin d’optimiser vos analyses et votre stratégie business.</button>
             <div class="texte_accordéon">
@@ -149,7 +139,7 @@
 
         </div>
 
-        <div class="Transformation_Digitale">
+        <div class="services Transformation_Digitale">
 
             <button class="accordéon"><h1>Transformation Digitale</h1>Concevez un futur digital plus efficace. Nous vous aidons à repenser vos processus, vos outils et vos méthodes pour accélérer l’innovation et la croissance.</button>
             <div class="texte_accordéon">
@@ -193,44 +183,50 @@
 
 ///////////////////////////////////////////////////////////////////////
 
+const a = document.getElementsByClassName('choix');
 
-    var acc = document.getElementsByClassName("choix");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    
-    this.classList.toggle("active2");
-
-    
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+for (let i=0; i<a.length; i++){
+  a[i].addEventListener('click', function(){
+    const panel = this.nextElementSibling;
+    if(panel && panel.style.display === 'block'){
+       panel.style.display='none';
+       this.classList.remove('active');
+       return;
     }
+    for(let j=0;j<a.length;j++){
+        a[j].classList.remove('active');
+        const p = a[j].nextElementSibling;
+        if(p) p.style.display='none';
+    }
+    panel.style.display='block';
+    this.classList.add('active');
   });
 }
+
 
 ///////////////////////////////////////////////////////////////////////
 
-   var acc = document.getElementsByClassName("accordéon");
-var i;
+const b = document.getElementsByClassName('accordéon');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    
-    this.classList.toggle("active");
-
-    
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+for (let i=0; i<b.length; i++){
+  b[i].addEventListener('click', function(){
+    const panel = this.nextElementSibling;
+    if(panel && panel.style.display === 'block'){
+       panel.style.display='none';
+       this.classList.remove('active');
+       return;
     }
+    for(let j=0;j<b.length;j++){
+        b[j].classList.remove('active');
+        const p = b[j].nextElementSibling;
+        if(p) p.style.display='none';
+    }
+    panel.style.display='block';
+    this.classList.add('active');
   });
 }
+
+
 ///////////////////////////////////////////////////////////////////////
 </script>
 
