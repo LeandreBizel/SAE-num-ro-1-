@@ -30,8 +30,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar img{
-  transform: scale(0.5);
+.Logo-navbar{
+  width: 12%;
+  height: calc(12% * 56.25%);
 }
 
 .logo {
@@ -86,19 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links li a:hover::after {
   width: 100%;
 }
-
-
-/* Footer ///////////////////////////////////////////////////////////////////////////////////*/
-
-footer{
-  background-color: #1e1e2f;
-  height: 150px;
-  color: white;
-}
-
-
-
-
 
 /* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
 
@@ -314,9 +302,10 @@ footer{
 
 footer {
             margin-top: 50px;
-            background-color: #222;
+            background-color: #2B2C43;
             color: #eee;
             text-align: center;
+            height: 130px;
             padding: 20px;
             font-size: 0.9em;
 }
