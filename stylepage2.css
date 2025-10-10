@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
+  background-color: #222;
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -82,7 +82,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links li a:hover::after {
   width: 100%;
 }
-/* ContainerServices /////////////////////////////////////////////////////////////////////////*/
 
 
 /* Footer ///////////////////////////////////////////////////////////////////////////////////*/
@@ -189,127 +188,11 @@ footer{
   justify-content: center;
   gap: 10px;
   width: 100%;
-  height: 500px;
-}
-
-.choix-anim{
-  background-color: #ECF3F4;
-  border-radius: 5px;
-  width: 100%;
-  height: 200px;
-  cursor: pointer;
-  transition: height 1s ease;
-}
-.choix-anim:hover{
-  background-color: #ECF3F4;
-  height: 500px;
-}
-.choix-anim:hover .pr_choisir1,.pr_choisir2,.pr_choisir3 h3{
-  visibility: visible;
-}
-
-.img1_pr_choisir{
-  width: 300px;
-  height: calc(300px * 125%);
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #ECF3F4;
-}
-.img2_pr_choisir{
-  width: 300px;
-  height: calc(300px * 125%);
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #ECF3F4;
-}
-.img3_pr_choisir{
-  width: 300px;
-  height: calc(300px * 125%);
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #ECF3F4;
-}
-
-.pr_choisir1 h3 {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-.pr_choisir1 p {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-
-.pr_choisir2 h3 {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-.pr_choisir2 p {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-
-.pr_choisir3 h3 {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-.pr_choisir3 p {
-  width: 10px;
-  height: 10px;
-  visibility: hidden;
-}
-
-/* containerServices ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-.ContainerServices1, .ContainerServices2{
-  display: flex;
-  flex-direction: wrap;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  height: 700px;
-}
-.Service_IA{
-  background-color: #ECF3F4;
-  width: 50%;
-  height: auto;
-}
-.Digital-Workplace_Modern-IT{
-  background-color: #ECF3F4;
-  width: 50%;
-  height: auto;
-}
-.Service_Cloud{
-  background-color: #ECF3F4;
-  width: 50%;
-  height: auto;
-}
-.Service_Cyber{
-  background-color: #ECF3F4;
-  width: 50%;
-  height: auto;
-}
-.Service_Data{
-  background-color: #ECF3F4;
-  width: 50%;
-  height: auto;
-}
-.Transformation_Digitale{
-  background-color: #ECF3F4;
-  width: 50%;
   height: auto;
 }
 
-
-
-
-.accordéon {
-  background-color: #eee;
-  color: #444;
+.choix {
+  background-color: #ECF3F4;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -320,14 +203,64 @@ footer{
 }
 
 
-.accordéon:hover {
-  background-color: #ccc;
+.active2, .choix:hover {
+  background-color: #ECF3F4;
+}
+
+
+.texte_choix {
+  padding: 0 18px;
+  background-color: #ECF3F4;
+  display: none;
+  overflow: hidden;
+}
+
+.img1_pr_choisir{
+  width: 300px;
+  height: calc(300px * 125%);
+}
+.img2_pr_choisir{
+  width: 300px;
+  height: calc(300px * 125%);
+}
+.img3_pr_choisir{
+  width: 300px;
+  height: calc(300px * 125%);
+}
+
+/* containerServices ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.ContainerServices{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.accordéon {
+  background-color: #ECF3F4;
+  cursor: pointer;
+  padding: 18px;
+  width: 65%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordéon:hover {
+  background-color: #ECF3F4;
 }
 
 
 .texte_accordéon {
   padding: 0 18px;
-  background-color: white;
+  background-color: #ECF3F4;
+  width: 65%;
   display: none;
   overflow: hidden;
 }
@@ -338,6 +271,7 @@ footer{
 /* footer /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 footer {
+            margin-top: 50px;
             background-color: #222;
             color: #eee;
             text-align: center;

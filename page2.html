@@ -40,17 +40,7 @@
         <button id="scroll">En savoir plus sur nos services</button>
             <script>
                  
-        const scrollButton = document.getElementById('scroll');
-
         
-        scrollButton.addEventListener('click', () => {
-            
-            window.scroll({
-                top: document.body.scrollHeight,
-                left: 0,
-                behavior: 'smooth'
-            });
-        });
             </script>
     
 </div>
@@ -62,25 +52,31 @@
 <section class="pr_choisir">
 
     <div class="pr_choisir1">
-        <div class="choix-anim"> <img class="img1_pr_choisir" src="/image_page2/inDurable.png"></div>
+        <button class="choix"> <img class="img1_pr_choisir" src="/image_page2/inDurable.png"></button>
+        <div class="texte_choix">
         <h3>« Innovation durable & sécurisée »</h3>
         <p>Nous vous accompagnons dans une stratégie IT responsable : cybersécurité renforcée, cloud éco‑efficace et IA explicable pour un impact ESG positif.</p>
+        </div>
     </div>
     <div class="pr_choisir2">
-        <div class="choix-anim"><img class="img2_pr_choisir" src="/image_page2/fast.webp"></div>
+        <button class="choix"><img class="img2_pr_choisir" src="/image_page2/fast.webp"></button>
+        <div class="texte_choix">
         <h3>« Résultats mesurables sans compromis »</h3>
         <p>Nos équipes certifiées livrent projets dans les temps et budgets, avec KPI clairs à suivre en temps réel.</p>
+        </div>
     </div>
     <div class="pr_choisir3">
-        <div class="choix-anim"><img class="img3_pr_choisir" src="/image_page2/libre.jpg"></div>
+        <button class="choix"><img class="img3_pr_choisir" src="/image_page2/libre.jpg"></button>
+        <div class="texte_choix">
         <h3>« Libérez votre potentiel numérique »</h3>
         <p>Devoteam transforme vos données en leviers de croissance : processus agiles, décisions éclairées et ROI visible dès le premier mois.</p>
+        </div>
     </div>
 
 </section>
 
 
-<section class="ContainerServices1">
+<section class="ContainerServices">
        
         <div class="Service_IA">
 
@@ -98,8 +94,7 @@
         
         <div class="Digital-Workplace_Modern-IT ">
 
-            <button class="accordéon"><h1>Digital Workplace & Modern IT </h1>Modernisez votre environnement de travail avec Devoteam.</button>
-                            Offrez à vos équipes des outils collaboratifs performants et sécurisés pour favoriser la productivité, l’agilité et une expérience employé fluide au quotidien.</summary>
+            <button class="accordéon"><h1>Digital Workplace & Modern IT </h1>Modernisez votre environnement de travail avec Devoteam. ET Offrez à vos équipes des outils collaboratifs performants et sécurisés pour favoriser la productivité, l’agilité et une expérience employé fluide au quotidien.</button>
             <div class="texte_accordéon">
             <p>
                 Devoteam réinvente les environnements de travail numériques pour renforcer la collaboration, la productivité et le bien-être des collaborateurs.
@@ -124,10 +119,6 @@
             </div>
 
         </div>
-    
-    </section>
-
-    <section class="ContainerServices2">
 
         <div class="Service_Cyber">
 
@@ -174,8 +165,75 @@
 
     </section>
 
+
 </body>
+
 <footer>
     <p>© 2025 - Devoteam | Page réalisée par Decailloz Valentin</p>
 </footer>
+
+
+
+
+<script>
+///////////////////////////////////////////////////////////////////////
+
+    const scrollButton = document.getElementById('scroll');
+
+        
+        scrollButton.addEventListener('click', () => {
+            
+            window.scroll({
+                top: document.body.scrollHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+    var acc = document.getElementsByClassName("choix");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active2");
+
+    
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+///////////////////////////////////////////////////////////////////////
+
+   var acc = document.getElementsByClassName("accordéon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+
+    
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+///////////////////////////////////////////////////////////////////////
+</script>
+
+
+
 </html>
