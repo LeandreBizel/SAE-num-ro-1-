@@ -156,6 +156,7 @@ footer{
   margin-top: 10px;
 }
 .solutions button {
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   background-color: #EF223D;
   margin-top: 25px;
@@ -165,8 +166,9 @@ footer{
   border-color: #ECF3F4;
 }
 .solutions button:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
   border: 2px solid;
-  transition: all 1s ease-out;
   border-color: #2B2C43;
 }
 
@@ -192,6 +194,7 @@ footer{
 }
 
 .choix {
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   height: auto;
   width: auto;
@@ -202,7 +205,8 @@ footer{
 }
 
 .active2, .choix:hover {
-  
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -216,23 +220,40 @@ footer{
 }
 
 .img1_pr_choisir{
+  transition: all 0.3s ease-in-out;
   border: none;
   border-radius: 15px;
   width: 300px;
   height: calc(300px * 125%);
 }
 .img2_pr_choisir{
+  transition: all 0.3s ease-in-out;
   border: none;
   border-radius: 15px;
   width: 300px;
   height: calc(300px * 125%);
 }
 .img3_pr_choisir{
+  transition: all 0.3s ease-in-out;
   border: none;
   border-radius: 15px;
   width: 300px;
   height: calc(300px * 125%);
 }
+
+.img1_pr_choisir:hover { 
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.img2_pr_choisir:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.img3_pr_choisir:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
 
 
 
@@ -250,6 +271,7 @@ footer{
 
 .accordéon {
   background-color: #ECF3F4;
+  border-radius: 10px;
   cursor: pointer;
   padding: 18px;
   width: 65%;
@@ -261,13 +283,17 @@ footer{
 
 
 .active, .accordéon:hover {
-  background-color: #ECF3F4;
+  background-color: #ccd2d3;
+  transform: scale(1.09);
+  transition: all 0.4s ease-in-out;
 }
 
 
 .texte_accordéon {
+  transform: scale(1.09);
+  background-color: #ccd2d3;
+  border-radius: 10px;
   padding: 0 18px;
-  background-color: #ECF3F4;
   width: 65%;
   display: none;
   overflow: hidden;
