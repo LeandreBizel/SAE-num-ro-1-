@@ -136,8 +136,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .haut-page{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   background-color: #ECF3F4;
   width: 100%;
   height: 500px;
@@ -147,6 +145,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5%;
   width: 50%;
   height: auto;
+}
+.haut-page img{
+  float: right;
+  margin-top: 2%;
+  margin-right: 1%;
+  transform: scale(0.9);
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .haut-page button{
   transition: all 0.5s ease-in-out;
@@ -168,6 +175,75 @@ h1, h2, h3, h4, h5, h6 {
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+
+.presentation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.prt{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.prt1{
+margin-top: 50px;
+}
+.prt3{
+margin-bottom: 50px;
+}
+.prt1 img{
+border-radius: 10px;
+margin-left: 10%;
+float: left;
+width: 400px;
+height: auto;
+}
+.prt2 img{
+border-radius: 10px;
+margin-left: 10%;
+float: right;
+width: 400px;
+height: auto;
+}
+.prt3 img{
+border-radius: 10px;
+margin-left: 10%;
+float: left;
+width: 400px;
+height: auto;
+}
+.prt1 p{
+transform: scale(1.3);
+margin-top: 5%;
+margin-left: 10%;
+float: right;
+width: 40%;
+height: auto;
+}
+.prt2 p{
+transform: scale(1.3);
+margin-top: 5%;
+margin-left: 10%;
+float: left;
+width: 40%;
+height: auto;
+}
+.prt3 p{
+transform: scale(1.3);
+margin-top: 5%;
+margin-left: 10%;
+float: right;
+width: 40%;
+height: auto;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 footer {
             margin-top: 50px;
             background-color: #2B2C43;
