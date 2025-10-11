@@ -1,23 +1,8 @@
-/* ========== RESET ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ========== BASE ========== */
-body {
-  font-family: "Bahnschrift", "Segoe UI", sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f; /* fond sombre cohérent */
+  background-color: #1e1e2f;
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -49,7 +34,7 @@ body {
 }
 
 .nav-links li a {
-  color: #8D99AE;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -69,16 +54,33 @@ body {
   left: 0;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: #EF233C;
+.nav-links li a:hover {
+  color: #8D99AE;
 }
 
-.nav-links li a:hover::after,
-.nav-links li a.active::after {
+.nav-links li a:hover::after {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
 /* ========== TITRE PRINCIPAL ========== */
 .titre {
   text-align: center;
