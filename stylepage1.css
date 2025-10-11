@@ -27,19 +27,17 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 1px;
-  height: 60px;
-  width: 230px;
+  height: 45px;
+  width: 180px;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
 
 .logo img {
-  height: 200%;
+  height: 100%;
   width: auto;
   display: block;
-  transform: scale(1.35);
-  transform-origin: left center;
 }
 
 .nav-links {
@@ -77,46 +75,6 @@ body {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    gap: 15px;
-  }
-
-  .nav-links li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
-}
-/* ========== TITRE PRINCIPAL ========== */
-.titre {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, #2B2D42 0%, #EF233C 100%);
-  color: white;
-  font-family: "Franklin Gothic Medium";
-}
-
-.titre h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.titre p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 /* ========== CONTENU PRINCIPAL ========== */
 main {
   max-width: 1100px;
@@ -132,6 +90,14 @@ section {
 }
 
 /* Titres de section */
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  color: #2B2D42;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
@@ -163,12 +129,16 @@ ul {
 
 /* ========== IMAGES ET FIGURES ========== */
 figure {
-  margin: 30px 0;
+  margin: 30px auto;
   text-align: center;
+  max-width: 700px;
 }
 
 figure img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -176,7 +146,8 @@ figure img {
 figcaption {
   font-size: 0.9em;
   color: #555;
-  margin-top: 5px;
+  margin-top: 8px;
+  font-style: italic;
 }
 
 /* ========== FRISE CHRONOLOGIQUE ========== */
@@ -248,7 +219,11 @@ footer {
     padding: 25px;
   }
 
-  .titre h1 {
+  h1 {
     font-size: 1.8rem;
+  }
+
+  figure {
+    max-width: 100%;
   }
 }
