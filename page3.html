@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devoteam</title>
+    <title>à propos de Devoteam</title>
     <link rel="stylesheet" href="stylepage3.css">
     <link  rel= "icon"  href= "favicon.ico"  type= "image/x-icon" > 
 </head>
@@ -29,54 +29,96 @@
     <main>
 <section class="about">
     <div class="about-text">
-      <h2>À propos de nous</h2>
+      <h2>À propos de Devoteam</h2>
       <p>
-        Chez Devoteam, nous accompagnons les entreprises dans leur transformation numérique 
-        à travers l’innovation, le cloud et la technologie. Nous plaçons l’humain et 
-        la durabilité au cœur de nos projets pour construire un avenir plus responsable.
+        Devoteam accompagnons les entreprises dans leur transformation numérique 
+        à travers l’innovation, le cloud et la technologie. Elle place l’humain et 
+        la durabilité au cœur de leurs projets pour construire un avenir plus responsable.
       </p>
-      <button>En savoir plus</button>
+          <button onclick="window.location.href='page2.html'">Les services proposées</button>
     </div>
     <div class="about-image">
       <img src="https://picsum.photos/500/350" alt="Image à propos">
     </div>
   </section>
-<div class="case">
-    <div class="ch_aff">
-        <div class="image"><img src=""></div>
-        <div class="h1"><p>Chiffre d'affaires de l'éntreprise </p></div>
-        <div class="text"><p>En 2023 le chiffre d’affaires de devoteam était de 469,80 millions d’euros. En 2024 le chiffre d’affaires était de 485,70 millions d’euros soit une augmentation de 3,38 %  </p>
+
+<section class="services">
+    <h2>Les informations de Devoteam</h2>
+    <div class="services-content">
+
+      <div class="services-image">
+        <img src="https://picsum.photos/600/400" alt="Illustration services">
+      </div>
+
+      <div class="services-list">
+        
+        <div class="accordion">
+          <input type="checkbox" id="service1">
+          <label for="service1" class="accordion-title">
+            <h3>Service 1 — Conseil en transformation digitale</h3>
+            <span class="arrow">▼</span>
+          </label>
+          <div class="accordion-content">
+            <p>
+              Devoteam accompage les entreprises dans leur transition numérique 
+              en optimisant leurs processus et en intégrant des solutions innovantes.
+            </p>
+            <img src="Graphique.png" alt="Transformation digitale">
+          </div>
         </div>
+
+        <div class="accordion">
+          <input type="checkbox" id="service2">
+          <label for="service2" class="accordion-title">
+            <h3>Service 2 — Cloud computing & migration</h3>
+            <span class="arrow">▼</span>
+          </label>
+          <div class="accordion-content">
+            <p>
+              Nous aidons les organisations à migrer vers le cloud pour gagner 
+              en performance, sécurité et flexibilité.
+            </p>
+            <img src="camembert.png" alt="Cloud computing">
+          </div>
+        </div>
+
+        <div class="accordion">
+          <input type="checkbox" id="service3">
+          <label for="service3" class="accordion-title">
+            <h3>Service 3 — Cybersécurité et conformité</h3>
+            <span class="arrow">▼</span>
+          </label>
+          <div class="accordion-content">
+            <p>
+              Nos experts assurent la protection de vos données et la conformité 
+              avec les normes de sécurité internationales.
+            </p>
+            <img src="Capture d'écran 2025-10-09 151944.png" alt="Cybersécurité">
+          </div>
+        </div>
+
+        <div class="accordion">
+          <input type="checkbox" id="service4">
+          <label for="service4" class="accordion-title">
+            <h3>Service 4 — Développement d’applications sur mesure</h3>
+            <span class="arrow">▼</span>
+          </label>
+          <div class="accordion-content">
+            <p>
+              Nous concevons des applications modernes, ergonomiques et évolutives 
+              pour répondre à vos besoins spécifiques.
+            </p>
+            <img src="https://picsum.photos/600/300?4" alt="Développement sur mesure">
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="nb_employé">
-        <div class="image"><img src=""></div>
-        <div class="h1"><p>Nombres d'employés</p></div>
-        <div class="text"><p>Le nombre de salariés de l’entreprise est d’environ 10000 employés partout dans le monde dont 2500 en France </p></div>
-    </div>
+  <footer>
+    <p>© 2025 - Devoteam | Page réalisée par Mael</p>
+  </footer>
 
-
-    <div class="nb_bureaux">
-        <div class="h1"><p>nombres de bureaux</p></div>
-        <div class="text"><p>En France il y a plusieurs bureaux dont le siège social qui se situe en région parisienne. Les bureaux se situent à Bordeaux, Lille, Lyon, Marseille, Montpellier, Nantes, Niort, Rennes et Toulouse.</p></div>
-    </div>
-
-
-    <div class="Empreinte_carbone">
-        <div class="h1"><p>Empreinte carbone</p></div>
-        <div class="text"><p>En 2022 leur empreinte carbone était de 38 236,67 Tonnes d’émissions de dioxyde de carbone</p></div>
-    </div>
-    <div class="comparatif">
-        <div class="image"><img src=""></div>
-        <div class="h1"><p>Comparatifs des chiffres d'affaires entre Devoteam et ses concurents</p></div>
-        <div class="text"><p></p></div>
-    </div>
-</div>
-
-
-    </main>
 </body>
-<footer>
-    <p>© 2025 - Devoteam | Page réalisée par mael</p>
-</footer>
 </html>
