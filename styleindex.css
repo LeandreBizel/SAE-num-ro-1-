@@ -1,4 +1,7 @@
-* {
+/* */
+/* page ///////////////////////////////////////////////////////////////////////////////*/
+/* */
+html *, body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,17 +9,30 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+  background-color: white;
 }
+p , .p_choix{
+  font-family: 'Bahnschrift', 'Arial', 'sans-serif';
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Franklin Ghotic Medium','Arial', 'sans-serif';
+}
+
+/* bar_nav ////////////////////////////////////////////////////////////////////////////*/
 
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
+  background-color: #2B2C43;
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Logo-navbar{
+  width: 12%;
+  height: calc(12% * 56.25%);
 }
 
 .logo {
@@ -32,7 +48,7 @@ body {
 }
 
 .logo img {
-    height: 180%;                  
+    height: 145px;                  
   width: auto;                  
   display: block; 
   transform: scale(1.3);         
@@ -57,7 +73,7 @@ body {
   display: block;
   width: 0%;
   height: 2px;
-  background-color: #00adb5;
+  background-color: #EF223D;
   transition: width 0.3s;
   position: absolute;
   bottom: -5px;
@@ -65,12 +81,14 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #00adb5;
+  color: #EF223D;
 }
 
 .nav-links li a:hover::after {
   width: 100%;
 }
+
+/* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 768px) {
   .navbar {
@@ -96,17 +114,66 @@ body {
   }
 }
 
-html,body{
-    height: 100%;
-    margin: 0;
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.test {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  background-color: white;
+}
+p{
+  font-family: 'Bahnschrift', 'Arial', 'sans-serif';
 }
 
-.main {
-  flex: 1;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Franklin Ghotic Medium','Arial', 'sans-serif';
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.haut-page{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #ECF3F4;
+  width: 100%;
+  height: 500px;
+}
+.haut-page div{
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 50%;
+  height: auto;
+}
+.haut-page button{
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: #EF223D;
+  margin-top: 25px;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #ECF3F4;
+}
+.haut-page button:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  border: 2px solid;
+  border-color: #2B2C43;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+footer {
+            margin-top: 50px;
+            background-color: #2B2C43;
+            color: #eee;
+            text-align: center;
+            height: 130px;
+            padding: 20px;
+            font-size: 0.9em;
 }
