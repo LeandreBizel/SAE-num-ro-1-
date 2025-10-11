@@ -207,9 +207,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .texte_choix {
-  width: 100%;
+  margin-top: 50px;
+  border-radius: 10px;
   float: right;
-  height: auto;
+  height: 110%;
   background-color: #ECF3F4;
   display: none;
   overflow: hidden;
