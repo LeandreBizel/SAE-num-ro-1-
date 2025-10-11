@@ -115,6 +115,7 @@ body {
 .about-text h2 {
   font-size: 2rem;
   margin-bottom: 15px;
+  font-family: 'Franklin Gothic Medium';
 }
 
 .about-text p {
@@ -155,6 +156,7 @@ body {
   text-align: center;
   font-size: 2em;
   margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium';
 }
 
 .services-content {
@@ -209,6 +211,7 @@ page img {
 .accordion-title h3 {
   margin: 0;
   font-size: 1.1rem;
+  font-family: 'Franklin Gothic Medium';
 }
 
 .arrow {
@@ -322,4 +325,6 @@ footer {
             padding: 20px;
             font-size: 0.9em;
 }
+
+
 
