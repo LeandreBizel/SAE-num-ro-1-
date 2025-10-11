@@ -1,32 +1,30 @@
-/* -------------------- */
-/* RESET + BASE */
-/* -------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #222;
-  line-height: 1.6;
-}
-
-/* -------------------- */
-/* NAVBAR */
-/* -------------------- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1e1e2f;
   padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 60px;
+  width: 230px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 45px;
+  height: 200%;
+  width: auto;
+  display: block;
+  transform: scale(1.35);
+  transform-origin: left center;
 }
 
 .nav-links {
@@ -41,6 +39,7 @@ body {
   font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .nav-links li a::after {
@@ -55,56 +54,99 @@ body {
   left: 0;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
+.nav-links li a:hover {
   color: #8D99AE;
 }
 
-.nav-links li a:hover::after,
-.nav-links li a.active::after {
+.nav-links li a:hover::after {
   width: 100%;
 }
 
-/* -------------------- */
-/* MAIN CONTENT */
-/* -------------------- */
-main {
-  max-width: 1000px;
-  margin: 40px auto;
-  background-color: #fff;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-h1 {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+/* ========== TITRE PRINCIPAL ========== */
+.titre {
   text-align: center;
-  color: #d62027;
-  margin-bottom: 30px;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #2B2D42 0%, #EF233C 100%);
+  color: white;
+  font-family: "Franklin Gothic Medium";
 }
 
-h2 {
-  color: #d62027;
-  border-left: 4px solid #d62027;
-  padding-left: 10px;
-  margin-bottom: 15px;
+.titre h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* -------------------- */
-/* SECTIONS */
-/* -------------------- */
+.titre p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========== CONTENU PRINCIPAL ========== */
+main {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 section {
   margin-bottom: 60px;
 }
 
+/* Titres de section */
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  color: #2B2D42;
+  margin-bottom: 1rem;
+  border-left: 4px solid #EF233C;
+  padding-left: 10px;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #EF233C;
+  margin-bottom: 0.5rem;
+}
+
+/* Texte */
+p, li, figcaption {
+  font-family: "Bahnschrift", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ========== LISTES ========== */
 ul {
   list-style-type: square;
   margin-left: 40px;
+  margin-top: 10px;
 }
 
-/* -------------------- */
-/* IMAGES */
-/* -------------------- */
+/* ========== IMAGES ET FIGURES ========== */
 figure {
   margin: 30px 0;
   text-align: center;
@@ -113,7 +155,7 @@ figure {
 figure img {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 figcaption {
@@ -122,9 +164,7 @@ figcaption {
   margin-top: 5px;
 }
 
-/* -------------------- */
-/* TIMELINE */
-/* -------------------- */
+/* ========== FRISE CHRONOLOGIQUE ========== */
 #timeline {
   position: relative;
   margin-top: 40px;
@@ -138,7 +178,7 @@ figcaption {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #d62027;
+  background-color: #EF233C;
 }
 
 .event {
@@ -154,39 +194,46 @@ figcaption {
   top: 5px;
   width: 15px;
   height: 15px;
-  background-color: #d62027;
+  background-color: #EF233C;
   border-radius: 50%;
   border: 2px solid white;
 }
 
-/* -------------------- */
-/* FOOTER */
-/* -------------------- */
+/* ========== FOOTER ========== */
 footer {
   background-color: #222;
   color: #eee;
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
+  font-family: "Bahnschrift", "Segoe UI", sans-serif;
 }
 
-/* -------------------- */
-/* RESPONSIVE */
-/* -------------------- */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
   }
 
   .nav-links {
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
   }
 
   main {
-    margin: 20px;
-    padding: 20px;
+    padding: 25px;
+  }
+
+  .titre h1 {
+    font-size: 1.8rem;
   }
 }
-
