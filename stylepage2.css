@@ -1,6 +1,6 @@
-/* */
+
 /* page ///////////////////////////////////////////////////////////////////////////////*/
-/* */
+
 html *, body * {
   margin: 0;
   padding: 0;
@@ -86,32 +86,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links li a:hover::after {
   width: 100%;
-}
-
-/* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    gap: 15px;
-  }
-
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
 }
 
 /* titre et solution ///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -314,7 +288,7 @@ footer {
 
 /* responsive page /////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media (max-width: 931px) {
+@media (max-width: 851px) {
   .solution_cont {
     width: 100%;
     height: auto;
@@ -335,5 +309,48 @@ footer {
   .p_choix{
     display: none;
   }
+  .titre{
+    font-size: large;
+  }
+  .solutions h1{
+    font-size: medium;
+  }
+  .solutions {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .ContainerServices{
+    margin-left: 5%;
+    width: 90%;
+  }
+  .accordéon, .texte_accordéon {
+    width: 90%;
+  }
+}
 
+/* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
 }

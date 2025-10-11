@@ -1,6 +1,6 @@
-/* */
+
 /* page ///////////////////////////////////////////////////////////////////////////////*/
-/* */
+
 html *, body * {
   margin: 0;
   padding: 0;
@@ -88,51 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-/* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    gap: 15px;
-  }
-
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
-}
-
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: white;
-}
-p{
-  font-family: 'Bahnschrift', 'Arial', 'sans-serif';
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Franklin Ghotic Medium','Arial', 'sans-serif';
-}
-
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* partie haute de la page ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .haut-page{
   display: flex;
@@ -173,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* partie presentation ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 .presentation{
@@ -252,4 +209,98 @@ footer {
             height: 130px;
             padding: 20px;
             font-size: 0.9em;
+}
+/* respondsive bar_nav /////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+/* respondsive page /////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 851px) {
+  .haut-page{
+    flex-direction: column;
+    height: auto;
+  }
+  .haut-page div{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .haut-page img{
+    display: none;
+  }
+.haut-page h1{
+  font-size: 6vmin;
+}
+.haut-page h3{
+  font-size: 4vmin;
+}
+  .prt1 img{
+border-radius: 10px;
+margin-left: 10%;
+float: left;
+width: 40%;
+height: calc(40% * (3/2));
+}
+.prt2 img{
+border-radius: 10px;
+margin-left: 10%;
+float: right;
+width: 40%;
+height: calc(40% * (3/2));
+}
+.prt3 img{
+border-radius: 10px;
+margin-left: 10%;
+float: left;
+width: 40%;
+height: calc(40% * (3/2));
+}
+.prt1 p{
+font-size: 2vmin;
+margin-top: 5%;
+margin-left: 10%;
+float: right;
+width: auto;
+height: auto;
+}
+.prt2 p{
+font-size: 2vmin;
+margin-top: 5%;
+margin-left: 10%;
+float: left;
+width: auto;
+height: auto;
+}
+.prt3 p{
+font-size: 2vmin;
+margin-top: 5%;
+margin-left: 10%;
+float: right;
+width: auto;
+height: auto;
+}
 }
