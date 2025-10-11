@@ -70,7 +70,7 @@
        
         <div class="services Service_IA">
 
-            <button class="accordéon"><h1> IA </h1>Optimisez vos processus grâce à l’intelligence artificielle. DevoTeam vous accompagne dans la conception de solutions IA sur mesure pour améliorer la productivité, l’expérience client et la prise de décision. </button>
+            <button class="accordéon"><h1> IA </h1><p class="p_choix">Optimisez vos processus grâce à l’intelligence artificielle. DevoTeam vous accompagne dans la conception de solutions IA sur mesure pour améliorer la productivité, l’expérience client et la prise de décision.</p> </button>
             <div class="texte_accordéon">
             <p>
                 Devoteam aide les entreprises à libérer le plein potentiel de l’IA grâce à une approche complète, responsable et orientée valeur.
@@ -84,7 +84,7 @@
         
         <div class="services Digital-Workplace_Modern-IT ">
 
-            <button class="accordéon"><h1>Digital Workplace & Modern IT </h1>Modernisez votre environnement de travail avec Devoteam. ET Offrez à vos équipes des outils collaboratifs performants et sécurisés pour favoriser la productivité, l’agilité et une expérience employé fluide au quotidien.</button>
+            <button class="accordéon"><h1>Digital Workplace & Modern IT </h1><p class="p_choix">Modernisez votre environnement de travail avec Devoteam. ET Offrez à vos équipes des outils collaboratifs performants et sécurisés pour favoriser la productivité, l’agilité et une expérience employé fluide au quotidien.</button>
             <div class="texte_accordéon">
             <p>
                 Devoteam réinvente les environnements de travail numériques pour renforcer la collaboration, la productivité et le bien-être des collaborateurs.
@@ -98,7 +98,7 @@
         
         <div class="services Service_Cloud">
 
-            <button class="accordéon"><h1>Cloud</h1>Accélérez votre migration vers le cloud en toute sécurité. Nos experts vous conseillent et intègrent les meilleures solutions (AWS, Google Cloud, Azure) pour plus d’agilité et de performance.</button>
+            <button class="accordéon"><h1>Cloud</h1><p class="p_choix">Accélérez votre migration vers le cloud en toute sécurité. Nos experts vous conseillent et intègrent les meilleures solutions (AWS, Google Cloud, Azure) pour plus d’agilité et de performance.</p></button>
             <div class="texte_accordéon">
             <p>
                 Devoteam accompagne les organisations dans la conception, la migration et la gestion de leurs environnements cloud, en partenariat avec les leaders du marché tels qu’AWS, Microsoft Azure et Google Cloud.
@@ -112,7 +112,7 @@
 
         <div class="services Service_Cyber">
 
-            <button class="accordéon"><h1>Cyber-securité</h1>Protégez vos données et vos infrastructures contre les menaces. DevoTeam propose des solutions avancées de cybersécurité adaptées aux enjeux actuels de conformité et de résilience.</button>
+            <button class="accordéon"><h1>Cyber-securité</h1><p class="p_choix">Protégez vos données et vos infrastructures contre les menaces. DevoTeam propose des solutions avancées de cybersécurité adaptées aux enjeux actuels de conformité et de résilience.</p></button>
             <div class="texte_accordéon">
             <p>
                 Devoteam accompagne les organisations dans la protection, la conformité et la résilience de leurs systèmes face aux menaces numériques.
@@ -127,7 +127,7 @@
         
         <div class="services Service_Data">
 
-            <button class="accordéon"><h1>Gestion de Data</h1>Valorisez vos données pour générer de la valeur. DevoTeam met en place des plateformes data modernes, de l’ingestion au reporting, afin d’optimiser vos analyses et votre stratégie business.</button>
+            <button class="accordéon"><h1>Gestion de Data</h1><p class="p_choix">Valorisez vos données pour générer de la valeur. DevoTeam met en place des plateformes data modernes, de l’ingestion au reporting, afin d’optimiser vos analyses et votre stratégie business.</p></button>
             <div class="texte_accordéon">
             <p>
                 Devoteam aide les entreprises à exploiter pleinement le potentiel de leurs données pour accélérer leur prise de décision, innover et améliorer leurs performances.
@@ -141,7 +141,7 @@
 
         <div class="services Transformation_Digitale">
 
-            <button class="accordéon"><h1>Transformation Digitale</h1>Concevez un futur digital plus efficace. Nous vous aidons à repenser vos processus, vos outils et vos méthodes pour accélérer l’innovation et la croissance.</button>
+            <button class="accordéon"><h1>Transformation Digitale</h1><p class="p_choix">Concevez un futur digital plus efficace. Nous vous aidons à repenser vos processus, vos outils et vos méthodes pour accélérer l’innovation et la croissance.</p></button>
             <div class="texte_accordéon">
             <p>
                 Devoteam réinvente les environnements de travail numériques pour renforcer la collaboration, la productivité et le bien-être des collaborateurs.
@@ -172,14 +172,13 @@
 
         
         scrollButton.addEventListener('click', () => {
-            
+
             window.scroll({
-                top: document.body.scrollHeight,
+                top: document.body.scrollHeight - 870 ,
                 left: 0,
                 behavior: 'smooth'
             });
         });
-
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -202,6 +201,7 @@ for (let i=0; i<a.length; i++){
     this.classList.add('active');
   });
 }
+
 
 
 ///////////////////////////////////////////////////////////////////////
