@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-    height: 180%;                  
+    height: 145px;                  
   width: auto;                  
   display: block; 
   transform: scale(1.3);         
