@@ -13,12 +13,11 @@ body {
   line-height: 1.6;
 }
 
-/* ========== NAVBAR ========== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
+  background-color: #1e1e2f; /* fond sombre cohérent */
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +49,7 @@ body {
 }
 
 .nav-links li a {
-  color: #ffffff;
+  color: #8D99AE;
   text-decoration: none;
   font-weight: 500;
   position: relative;
